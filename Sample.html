@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="brand">SampleSite</div>
+                <div class="spacer"></div>
+                <button class="btn" id="themeToggle" aria-pressed="false">Toggle Theme</button>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="profile">
+                <img class="profile-avatar" src="https://via.placeholder.com/100" alt="Profile avatar">
+                <h1 class="profile-name">John Doe</h1>
+                <p class="profile-bio">Web Developer | Tech Enthusiast</p>
+            </div>
+            
+            <div class="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Computer Science</h3>
+                    <p class="school-name">University of Technology</p>
+                    <p class="graduation-year">Graduated: 2020</p>
+                </div>
+                <div class="education-item">
+                    <h3>High School Diploma</h3>
+                    <p class="school-name">Central High School</p>
+                    <p class="graduation-year">Graduated: 2016</p>
+                </div>
+            </div>
+            
+            <div class="meeting-scheduler">
+                <h2>Schedule a Meeting</h2>
+                <form class="meeting-form">
+                    <div class="form-group">
+                        <label for="meeting-date">Meeting Date:</label>
+                        <input type="date" id="meeting-date" name="meeting-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="meeting-time">Meeting Time:</label>
+                        <input type="time" id="meeting-time" name="meeting-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="meeting-subject">Subject:</label>
+                        <input type="text" id="meeting-subject" name="meeting-subject" placeholder="Enter meeting subject" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Schedule Meeting</button>
+                </form>
+                <div id="confirmation-message" class="confirmation-message" style="display:none;">
+                    Meeting scheduled successfully!
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <style>
+        .profile {
+            text-align: center;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: 2rem auto;
+        }
+        
+        .profile-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        
+        .profile-name {
+            margin: 0.5rem 0;
+            font-size: 1.5rem;
+        }
+        
+        .profile-bio {
+            color: #666;
+            margin: 0;
+        }
+        
+        .meeting-scheduler {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        
+        .meeting-scheduler h2 {
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .meeting-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input {
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+        }
+        
+        .btn-submit {
+            padding: 0.75rem 1.5rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+        
+        .confirmation-message {
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
